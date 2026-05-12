@@ -1,0 +1,6 @@
+python-griffelib (2.0.2-1) unstable; urgency=low
+
+  * Initial Debian packaging of griffelib (griffe library distribution)
+  * Provides python3-griffe, conflicts with python3-griffe
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Tue, 12 May 2026 11:45:24 +0200

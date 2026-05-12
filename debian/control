@@ -1,0 +1,31 @@
+Source: python-griffelib
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-pip,
+Standards-Version: 4.7.0
+Homepage: https://mkdocstrings.github.io/griffe/
+Vcs-Git: https://github.com/Vitexus/griffe.git
+Vcs-Browser: https://github.com/Vitexus/griffe
+Rules-Requires-Root: no
+
+Package: python3-griffelib
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Provides: python3-griffe
+Conflicts: python3-griffe
+Replaces: python3-griffe
+Description: Signatures for entire Python programs (griffelib)
+ griffe extracts the structure, frame, and skeleton of your Python project
+ to generate API documentation or find breaking changes in your API.
+ .
+ griffelib is the library distribution of griffe, providing stable
+ programmatic access to its core functionality.
+ .
+ This package provides the Python 3 library (imported as griffe).
